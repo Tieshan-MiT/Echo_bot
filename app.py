@@ -46,7 +46,7 @@ def callback():
     #    app.logger.info("Invalid signature. Please check your channel access token/channel secret.")
     #    abort(400)
 
-    return 'OK'
+    return "OK", 200
 
 
 @line_handler.add(MessageEvent, message=TextMessageContent)
